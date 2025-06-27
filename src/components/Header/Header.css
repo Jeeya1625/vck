@@ -1,0 +1,165 @@
+.my-button{
+  color:white;
+  background-color: rgb(141, 214, 30);
+  border-radius: 5px;
+  border-color:rgb(141, 214, 30);
+  font-size: large;
+  outline: none;
+}
+
+.header{
+  background-color:dodgerblue;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  position: sticky;
+}
+
+.menubar-dekstop {
+  float: right;
+  word-spacing: 20px;
+  font-size: large;
+}
+
+.menubar-dekstop:hover {
+  color:rgb(212, 211, 211) ;
+}
+
+.link {
+  color:aliceblue;
+  text-decoration: none;
+  padding: 5px 0;
+}
+
+.link:hover {
+  color:rgb(212, 211, 211) ;
+  border-bottom: 2px solid;
+}
+
+.my-button:hover {
+  background-color: rgb(141, 214, 30);
+  cursor:pointer;
+  text-decoration: none;
+    color: aliceblue;
+}
+
+.my-button:active {
+  background-color: rgb(141, 214, 30);
+  box-shadow: 0 2px aliceblue;
+}
+
+.clg-name {
+  font-size:xx-large;
+}
+
+.clg-name:hover {
+  cursor: pointer;
+  color: rgb(212, 211, 211);
+}
+
+.hamburger-menu {
+  display: none;
+  /* Hide on desktop */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+  z-index: 1002;
+  /* Ensure it's above the drawer if needed */
+}
+
+.hamburger-icon {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+.drawer-nav {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 200px;
+  height: 100%;
+  background-color: #F8F9FA;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.drawer-nav.open {
+  right: 0;
+  float: right;
+}
+
+.drawer-nav .link {
+  color: #343A40;
+  padding: 15px 20px;
+  border-bottom: 1px solid #E0E0E0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.drawer-nav .link:hover {
+  background-color: #E9ECEF;
+  color: #007BFF;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.drawer-nav .link.my-button {
+  text-align: center;
+}
+
+.close-drawer-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #343A40;
+  cursor: pointer;
+  z-index: 1010;
+}
+
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.drawer-nav.open+.drawer-overlay {
+  display: block;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .menubar-dekstop {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .clg-name {
+    font-size: 1.5em;
+  }
+}

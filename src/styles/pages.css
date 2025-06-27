@@ -1,0 +1,160 @@
+.background{
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+    margin-top: 5%;
+    padding-bottom: 10%;
+    height:300px;
+    width: auto;
+    overflow-y: scroll;
+    align-items: center;
+}
+
+#hr{
+    color:whitesmoke;
+}
+
+.my-button{
+  color:white;
+  background-color: rgb(141, 214, 30);
+  border-radius: 5px;
+  border-color: rgb(141, 214, 30);
+  font-size: large;
+}
+
+h1{
+    text-align: center;
+    color: dodgerblue;
+}
+
+th{
+    background-color: antiquewhite;
+}
+
+table,th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    height:150px;
+    width:100%;
+}
+
+td, th {
+    padding:10px;
+}
+
+#root {
+    box-shadow: 50px;
+}
+
+.image{
+    border-radius: 8px;
+    width: 100%;
+    height:100%;
+    object-fit: fill;
+    filter: brightness(60%);
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.image-text {
+    text-align: center;
+    position: absolute;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    font-size: larger;
+    padding-top: 20%;
+}
+
+.image2 {
+    border-radius: 8px;
+    width: 45%;
+    height:55%;
+    object-fit: fill;
+    margin-bottom: 5%;
+}
+
+.video {
+    width:100%;
+    height:auto;
+    align-items:center;
+}
+
+.article {
+    position:relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.image1{
+    border-radius: 8px;
+    width: 50%;
+    height:50%;
+    object-fit: fill;
+}
+
+.page {
+    position:static;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.image1:hover {
+      transform: scale(1.03);
+}
+
+.image2:hover {
+      transform: scale(1.03);
+}
+
+.center-container {
+    text-align: center;
+}
+
+
+@media (max-width: 768px) {
+    .background {
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 776px;
+    }
+  .image1{
+    height: auto;
+  }
+
+  .image2{
+      height: auto;
+  }
+
+  table,th, td {
+    border:1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    height:auto;
+    width:auto;
+}
+
+td, th {
+    padding:auto;
+}
+}
